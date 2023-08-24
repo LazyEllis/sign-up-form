@@ -14,4 +14,4 @@ Images are from [Undraw](https://undraw.co/)
 
 ## Live Demo
 
-[Live Demo](https://lazyellis.github.io/calculator/) :point_left:
+[Live Demo](https://lazyellis.github.io/sign-up-form/) :point_left:
