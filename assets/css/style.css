@@ -40,7 +40,7 @@ sup {
   padding: 20px;
   width: 35%;
   background-color: var(--secondary-btn-color);
-  color: var(--primary-heading-color);
+  color: var(--secondary-heading-color);
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -136,11 +136,15 @@ input:focus {
   color: var(--secondary-text-color);
 }
 
-input:valid {
+input:valid,
+input:valid:focus {
+  outline: 1px solid var(--valid-color);
   border: 1px solid var(--valid-color);
 }
 
-input:invalid {
+input:invalid,
+input:invalid:focus {
+  outline: 1px solid var(--invalid-color);
   border: 1px solid var(--invalid-color);
 }
 

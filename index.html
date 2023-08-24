@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CodeWave is a coding bootcamp that will teach you everything you need to know to enter junior developer roles in the workforce."
+    />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -24,32 +28,67 @@
           to enter junior developer roles in the workforce.
         </p>
       </div>
-      <form action="" method="post" id="sign-up-form">
+      <form id="sign-up-form">
         <h2>Sign Up</h2>
         <div class="form-row">
           <div class="form-section">
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" />
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              pattern="[A-Za-z\-]+"
+              title="The first name must contain only letters and hyphens"
+            />
           </div>
           <div class="form-section">
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" />
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+              pattern="[A-Za-z\-]+"
+              title="The last name must contain only letters and hyphens"
+            />
           </div>
         </div>
         <div class="form-row">
           <div class="form-section">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+              title="The email address must be in the format name@site.domain"
+            />
           </div>
           <div class="form-section">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              title="The phone number must be in the format XXXX-XXX-XXXX"
+            />
           </div>
         </div>
         <div class="form-row">
           <div class="form-section">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+              title="The password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character"
+            />
           </div>
           <div class="form-section">
             <label for="confirm-password">Confirm Password</label>
@@ -57,6 +96,7 @@
               type="password"
               name="confirm-password"
               id="confirm-password"
+              required
             />
           </div>
         </div>
@@ -66,5 +106,7 @@
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </div>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
